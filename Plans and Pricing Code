@@ -1,0 +1,258 @@
+<!Doctypehtml>
+<html>
+<head>
+<style>
+.container {
+ margin-top:30px;
+  width: 100%;
+}
+.package-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.packages {
+  margin: 20px;
+  width: 300px;
+  padding-top:20px;
+  padding-bottom: 1.5em;
+  height: 100%;
+  background-color: #2F3841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+  flex-wrap: wrap;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.list li {
+  font-size: 15px;
+  list-style: none;
+  border-bottom: 1px solid #f4f4f4;
+  padding-inline-start: 0;
+  border-width: 1px;
+  padding: 10px;
+}
+.first {
+  margin-top: 40px;
+  border-top: 1px solid #f4f4f4;
+}
+.list {
+  width: 80%;
+}
+ol,
+ul {
+  padding: 0;
+}
+.buttonone {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin: 15px 15px;
+  border-radius: 50px;
+  color: #f4f4f4;
+  transition: all 0.3s ease 0s;
+}
+.buttonone:hover {
+  transform: scale(1.2);
+}
+.buttonb {
+  background-color: #F5A623;
+  box-shadow: 0 0 10px 0 #00cc99 inset, 0 0 20px 2px #00cc99;
+}
+.buttonp {
+  background-color: #F5A623;
+  box-shadow: 0 0 10px 0 #ff007c inset, 0 0 20px 2px #ff007c;
+}
+.buttonm {
+  background-color: #F5A623;
+  box-shadow: 0 0 10px 0 #ffae42 inset, 0 0 20px 2px #ffae42;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+   
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e2321;
+  -webkit-transition: 0.4s;
+  box-shadow: 2px 6px 25px #1e2321;
+  transform: translate(0px, 0px);
+  transition: 0.6s ease transform, 0.6s box-shadow;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #50bfe6;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #50bfe6;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.top{
+     margin:0 auto;
+}
+ .toggle-btn 
+{
+     margin: auto;
+  text-align: center;
+  
+}
+.text1{
+    font-size:30px;
+}
+.text2{
+    font-size:30px;
+}
+@media screen and (max-width: 600px) {
+  .top {
+margin-right:50px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="top">
+      <h2 style="text-align:center;font-size:40px;">Life Skills For Schools (Annually)</h2>
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;">Multiple Classrooms</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Single Classrooms</span></div>
+    </div>
+    <div class="package-container">
+      <div class="packages">
+      <br>
+      <br>
+     
+        <h3 style="font-size:30px;" >Basic</h3>
+        <h3 class="text1">200 BD</h3>
+        <h3 class="text2">400 BD</h3>
+        <ul class="list">
+          <li class="first">&#10004; &nbsp;6 Domains</li>
+          <li>&#10004; &nbsp;15 courses</li>
+          <li>&#10004; &nbsp;Training</li>
+          <li style="color:#F0F0F0; opacity: 0.5;">X &nbsp;Dedicated Chat</li>
+          <li style="color:#F0F0F0; opacity: 0.5;">X &nbsp;Follow up Support</li>
+          
+        </ul>
+        <a href="https://www.facebook.com/" id="btng" class="buttonone buttonb">Get Started</a>
+        <a href="https://www.google.com/" id= "btnh" class="buttonone buttonb">Get Started</a>
+
+      </div>
+      <div class="packages">
+      <h3 style="color:#ff8c00; background-color:#FFFFFF; width:300px; font-size:25px; text-align:center;" >Recommended</h3>
+        <h3 style="font-size:30px;">Premium</h3>
+        <h3 class="text1">400 BD</h3>
+        <h3 class="text2">800 BD</h3>
+        <ul class="list">
+          <li class="first">&#10004; &nbsp;6 Domains</li>
+          <li>&#10004; &nbsp;40 courses</li>
+         <li>&#10004; &nbsp;Training</li>
+         <li>&#10004; &nbsp;Dedicated Chat</li>
+         <li style="color:#F0F0F0; opacity: 0.5;">X &nbsp;Follow up Support</li>
+        </ul>
+        <a href="#" id="btni" class="buttonone buttonp">Get Started</a>
+        <a href="https://www.google.com/" id= "btnj" class="buttonone buttonp">Get Started</a>
+
+      </div>
+      <div class="packages">
+      <br>
+      <br>
+        <h3 style="font-size:30px;">Premium Plus</h3>
+        <h3 class="text1">600 BD</h3>
+        <h3 class="text2">1200 BD</h3>
+        <ul class="list">
+          <li class="first">&#10004; &nbsp;6 Domains</li>
+          <li>&#10004; &nbsp;70 + Courses</li>
+          <li>&#10004; &nbsp;Training</li>
+          <li>&#10004; &nbsp;Dedicated Chat</li>
+          <li>&#10004; &nbsp;Follow up Support</li>
+        </ul>
+        <a href="#" id= "btnk" class="buttonone buttonm">Get Started</a>
+        <a href="https://www.google.com/" id= "btnl" class="buttonone buttonm">Get Started</a>
+
+      </div>
+    </div>
+</body>
+<script>
+function check() {
+  var checkBox = document.getElementById("checbox");
+  var btno = document.getElementById("btng");
+  var btnt = document.getElementById("btnh");
+  var btnth = document.getElementById("btni");
+  var btnf = document.getElementById("btnj");
+  var btnfi = document.getElementById("btnk");
+  var btns = document.getElementById("btnl");
+  
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == true) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+      btno.style.display="none";
+      btnt.style.display="block";
+      btnth.style.display="none";
+      btnf.style.display="block";
+      btnfi.style.display="none";
+      btns.style.display="block";
+    } else if (checkBox.checked == false) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+      btno.style.display="block";
+      btnt.style.display="none";
+      btnth.style.display ="block";
+      btnf.style.display ="none";
+      btnfi.style.display ="block";
+      btns.style.display ="none";
+    }
+  }
+}
+check();                               
+</script>
+</html>
+{% schema %}
+{
+"label":"purchase life skills for schools"
+}
+{% endschema %}
